@@ -45,12 +45,7 @@ public class LifeCycleServlet extends HttpServlet {
 			String headerValue = req.getHeader(headerName);
 			out.println(headerName + ':' + headerValue + "<br>");
 		}
-		
-		String name = req.getParameter("name");
-		String age = req.getParameter("age");
-		out.println("name:" + name + "<br>");
-		out.println("age:" + age + "<br>");
-		
+
 		out.println("</body>");
 		out.println("</html>");
 		out.close();
@@ -66,8 +61,4 @@ public class LifeCycleServlet extends HttpServlet {
 		out.println("<h1> hello~" + name + "</h1>");
 		out.close();
 	}
-
-
-	
-	
 }
